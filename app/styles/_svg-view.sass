@@ -1,14 +1,14 @@
-.icr-styles-view-svgs
+.cream-styles-view-svgs
   p
     margin-bottom: 20px
   ul
     margin-bottom: 20px
 
-.icr-repair-view-how-it-works
+.cream-repair-view-how-it-works
   background: #FBE8AF
   position: relative
   margin-bottom: 20px
-  .icr-main-content
+  .cream-main-content
     width: 100%
     margin: 0 auto
     @include media(except-handhelds)
@@ -21,7 +21,7 @@
     @include media(handhelds)
       margin: 0
 
-.icr-services-how-it-works-close
+.cream-services-how-it-works-close
   @include media(except-handhelds)
     width: 100px
     height: 55px
@@ -31,7 +31,7 @@
     background-color: #fff
     padding-top: 6px
     @include border-radius(13px)
-    
+
     p
       font-size: 12px
       text-transform: uppercase
@@ -48,7 +48,7 @@
     display: none
 
 //TODO: Combine all "more info 3 columns" into one and put into classes
-%icr-how-it-works-info
+%cream-how-it-works-info
   h3
     @include media(except-handhelds)
       font-size: 20px
@@ -63,7 +63,7 @@
   @include media(except-handhelds)
     width: 30%
     margin-right: 5%
-  
+
   @include media(handhelds)
     text-align: left
     margin-bottom: 30px
@@ -75,39 +75,39 @@
 
 //Icons Reppair
 $more-info-break: 680px
-+create-media(icr-repair-works, (top, decompress, before, $more-info-break))
-  no-op: 1 
++create-media(cream-repair-works, (top, decompress, before, $more-info-break))
+  no-op: 1
 
-$icr-repair-how: '1', '2', '3'
+$cream-repair-how: '1', '2', '3'
 
-@each $icr-repair-how in $icr-repair-how
-  .icr-repair-how-#{$icr-repair-how}
-    +get-media(icr-repair-works, '.svg-how-to-repair-#{$icr-repair-how }')
+@each $cream-repair-how in $cream-repair-how
+  .cream-repair-how-#{$cream-repair-how}
+    +get-media(cream-repair-works, '.svg-how-to-repair-#{$cream-repair-how }')
 
-.icr-repair-how-1
-  @extend %icr-how-it-works-info
+.cream-repair-how-1
+  @extend %cream-how-it-works-info
   @include media(small-screens)
     padding-left: 15px
 
-.icr-repair-how-2
-  @extend %icr-how-it-works-info  
+.cream-repair-how-2
+  @extend %cream-how-it-works-info
 
-.icr-repair-how-3
-  @extend %icr-how-it-works-info
+.cream-repair-how-3
+  @extend %cream-how-it-works-info
   margin-right: 0
   @include media(small-screens)
     padding-right: 15px
 
 
 $no-plans-break: 550px
-+create-media(icr-port-no-plans, (top, compress, before, $no-plans-break))
-  no-op: 1 
++create-media(cream-port-no-plans, (top, compress, before, $no-plans-break))
+  no-op: 1
 
-.icr-port-warning-message
+.cream-port-warning-message
   padding: 20px
   background-color: $advantage-color-secondary-light
   +border-radius(4px)
-  +get-media(icr-port-no-plans, '.svg-ico-portal-no-plans-image')
+  +get-media(cream-port-no-plans, '.svg-ico-portal-no-plans-image')
   +media(handhelds)
     &::before
       display: none

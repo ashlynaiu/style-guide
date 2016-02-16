@@ -56,11 +56,6 @@ angular
         url: '',
         parent: 'frame',
         templateUrl: 'views/media-queries.html'
-      })
-      .state('structure', {
-        url: '',
-        parent: 'frame',
-        templateUrl: 'views/structure.html'
       });
   }).run(function($rootScope){
   $rootScope.$on('$stateChangeSuccess', function() {
